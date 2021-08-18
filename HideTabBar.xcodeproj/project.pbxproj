@@ -11,6 +11,10 @@
 		C4852C3526CDA4C8004F36EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4852C3426CDA4C8004F36EB /* ContentView.swift */; };
 		C4852C3726CDA4CA004F36EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4852C3626CDA4CA004F36EB /* Assets.xcassets */; };
 		C4852C3A26CDA4CA004F36EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4852C3926CDA4CA004F36EB /* Preview Assets.xcassets */; };
+		C4852C4326CDA5D4004F36EB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4852C4226CDA5D4004F36EB /* Home.swift */; };
+		C4852C4526CDA5EA004F36EB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4852C4426CDA5EA004F36EB /* Message.swift */; };
+		C4852C4726CDA79C004F36EB /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4852C4626CDA79C004F36EB /* CustomTabBar.swift */; };
+		C4852C4926CDADBE004F36EB /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4852C4826CDADBE004F36EB /* MailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C4852C3426CDA4C8004F36EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4852C3626CDA4CA004F36EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4852C3926CDA4CA004F36EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4852C4226CDA5D4004F36EB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4852C4426CDA5EA004F36EB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C4852C4626CDA79C004F36EB /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		C4852C4826CDADBE004F36EB /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		C4852C3126CDA4C8004F36EB /* HideTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				C4852C4126CDA5C6004F36EB /* View */,
+				C4852C4026CDA5BB004F36EB /* Model */,
 				C4852C3226CDA4C8004F36EB /* HideTabBarApp.swift */,
 				C4852C3426CDA4C8004F36EB /* ContentView.swift */,
 				C4852C3626CDA4CA004F36EB /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				C4852C3926CDA4CA004F36EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4852C4026CDA5BB004F36EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4852C4426CDA5EA004F36EB /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4852C4126CDA5C6004F36EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4852C4226CDA5D4004F36EB /* Home.swift */,
+				C4852C4626CDA79C004F36EB /* CustomTabBar.swift */,
+				C4852C4826CDADBE004F36EB /* MailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4852C3526CDA4C8004F36EB /* ContentView.swift in Sources */,
+				C4852C4926CDADBE004F36EB /* MailView.swift in Sources */,
+				C4852C4726CDA79C004F36EB /* CustomTabBar.swift in Sources */,
+				C4852C4526CDA5EA004F36EB /* Message.swift in Sources */,
+				C4852C4326CDA5D4004F36EB /* Home.swift in Sources */,
 				C4852C3326CDA4C8004F36EB /* HideTabBarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
